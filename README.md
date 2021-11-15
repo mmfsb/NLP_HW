@@ -7,9 +7,9 @@
 
 There's been a lot of hype in the news lately about cryptocurrency, so you want to take stock, so to speak, of the latest news headlines regarding Bitcoin and Ethereum to get a better feel for the current public sentiment around each coin.
 
-In this assignment, you will apply natural language processing to understand the sentiment in the latest news articles featuring Bitcoin and Ethereum. You will also apply fundamental NLP techniques to better understand the other factors involved with the coin prices such as common words and phrases and organizations and entities mentioned in the articles.
+In this assignment, I applied natural language processing to understand the sentiment in the latest news articles featuring Bitcoin and Ethereum. I also applied fundamental NLP techniques to better understand the other factors involved with the coin prices such as common words and phrases and organizations and entities mentioned in the articles.
 
-Complete the following tasks:
+I completed the following tasks:
 
 1. [Sentiment Analysis](#1---Sentiment-Analysis)
 2. [Natural Language Processing](#2---Natural-Language-Processing)
@@ -23,29 +23,37 @@ Complete the following tasks:
 
 ---
 
-## Instructions
 
 ### 1 - Sentiment Analysis
 
-Use the [newsapi](https://newsapi.org/) to pull the latest news articles for Bitcoin and Ethereum and create a DataFrame of sentiment scores for each coin.
+I used the [newsapi](https://newsapi.org/) to pull the latest news articles for Bitcoin and Ethereum and create a DataFrame of sentiment scores for each coin.
 
-Use descriptive statistics to answer the following questions:
+Based on the information above the following questions can be answered:
 
-> Which coin had the highest mean positive score?
->
-> Which coin had the highest negative score?
->
-> Which coin had the highest positive score?
+<details>
+<summary>Q: Which coin had the highest mean positive score?</summary><br>
+A: Ethereum had the highest mean positive score with 0.063150 compared to Bitcoin with 0.054550<br>
+</details>
+
+<details>
+<summary>Q: Which coin had the highest compound score?</summary><br>
+A: Ethereum had the highest compound score with 0.822500 compared to Bitcoin with 0.755800<br>
+</details>
+
+<details>
+<summary>Q. Which coin had the highest positive score?</summary><br>
+A: Ethereum had the highest positive score with 0.221000 compared to Bitcoin with 0.199000<br>
+</details>
 
 
 
 ### 2 - Natural Language Processing
 
-In this section, you will use NLTK and Python to tokenize text, find n-gram counts, and create word clouds for both coins. 
+In this section, I used NLTK and Python to tokenize text, find n-gram counts, and create word clouds for both coins. 
 
 #### Tokenize
 
-Be sure to:
+I made sure to:
 
 1. Lowercase each word.
 2. Remove punctuation.
@@ -53,14 +61,14 @@ Be sure to:
 
 #### N-grams
 
-Next, look at the ngrams and word frequency for each coin.
+Next, I looked at the ngrams and word frequency for each coin.
 
 1. Use NLTK to produce the ngrams for N = 2.
 2. List the top 10 words for each coin.
 
 #### Word Clouds
 
-Finally, generate word clouds for each coin to summarize the news for each coin.
+Finally, generated word clouds for each coin to summarize the news for each coin.
 
 ![btc-word-cloud.png](Images/btc-word-cloud.png)
 
@@ -69,7 +77,7 @@ Finally, generate word clouds for each coin to summarize the news for each coin.
 
 ### 3 - Named Entity Recognition
 
-In this section, you will build a named entity recognition model for both coins and visualize the tags using SpaCy.
+In this section, I built a named entity recognition model for both coins and visualized the tags using SpaCy.
 
 ![btc-ner.png](Images/btc-ner.png)
 
